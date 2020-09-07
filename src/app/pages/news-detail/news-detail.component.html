@@ -1,0 +1,10 @@
+<app-layout>
+ <div class="flex-container">
+  <mat-card *ngFor="let item of articles">
+   <mat-card-title>{{item.title}}</mat-card-title>
+   <mat-card-subtitle>{{item.publishedAt | date: "medium"}}</mat-card-subtitle>
+   <img mat-card-image [src]="getImage(item.urlToImage) ? item.urlToImage : ''">
+   <mat-card-content>{{item.content}}</mat-card-content>
+  </mat-card>
+ </div>
+</app-layout>

@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+ <button mat-icon-button class="example-icon" (click)="openMenu()" aria-label="Example icon-button with menu icon">
+  <mat-icon *ngIf="!isMenuOpened" class="header__title-button-icon">menu</mat-icon>
+  <mat-icon *ngIf="isMenuOpened" class="header__title-button-icon">arrow_back</mat-icon>
+ </button>
+ <span>My App</span>
+</mat-toolbar>

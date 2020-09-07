@@ -1,0 +1,14 @@
+mat-card {
+  max-width: 400px;
+  mat-card-title {
+    max-width: 400px;
+    min-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
