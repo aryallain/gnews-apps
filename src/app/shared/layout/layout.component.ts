@@ -11,7 +11,7 @@ export class LayoutComponent implements OnDestroy {
   @ViewChild('sidenav') sidenav: MatSidenav;
   isShowSidebar: boolean;
   mobileQuery: MediaQueryList;
-  mobileQueryListener: () => void;
+  private mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 1024px)');
